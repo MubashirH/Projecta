@@ -1,15 +1,17 @@
 <div class="menu-wrapper w-100 p-0 m-auto">
     <div class="desktop-menu py-4 row m-auto w-100 d-md-flex d-none">
         <div class="col-md-3 col-lg-3">
-            <div class="logo w-100"></div>
+            <div class="logo w-100">
+                <a href="index.html"></a>
+            </div>
         </div>
         <div class="col-md-9 col-lg-9 d-flex justify-content-between align-items-center">
-            <a onClick="closeMenu()" href="index.html">HOME</a>
-            <a onClick="closeMenu()" href="services.html">SERVICES</a>
-            <a onClick="closeMenu()" href="products.html">PRODUCTS</a>
-            <a onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
-            <a onClick="closeMenu()" href="careers.html">CAREER</a>
-            <a onClick="closeMenu()" href="contactus.html">CONTACT US</a>
+            <a id="index" onClick="closeMenu()" href="index.html">HOME</a>
+            <a id="services" onClick="closeMenu()" href="services.html">SERVICES</a>
+            <a id="products" onClick="closeMenu()" href="products.html">PRODUCTS</a>
+            <a id="aboutus" onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
+            <a id="careers" onClick="closeMenu()" href="careers.html">CAREER</a>
+            <a id="contactus" onClick="closeMenu()" href="contactus.html">CONTACT US</a>
         </div>
     </div>
     <div class="mobile-menu row m-auto w-100 d-xs-block d-sm-block d-md-none d-lg-none">
@@ -25,12 +27,12 @@
             </span>
         </label>
         <nav id="menu">
-            <a onClick="closeMenu()" href="index.html">HOME</a>
-            <a onClick="closeMenu()" href="services.html">SERVICES</a>
-            <a onClick="closeMenu()" href="products.html">PRODUCTS</a>
-            <a onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
-            <a onClick="closeMenu()" href="careers.html">CAREER</a>
-            <a onClick="closeMenu()" href="contactus.html">CONTACT US</a>
+            <a id="index" onClick="closeMenu()" href="index.html">HOME</a>
+            <a id="services" onClick="closeMenu()" href="services.html">SERVICES</a>
+            <a id="products" onClick="closeMenu()" href="products.html">PRODUCTS</a>
+            <a id="aboutus" onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
+            <a id="careers" onClick="closeMenu()" href="careers.html">CAREER</a>
+            <a id="contactus" onClick="closeMenu()" href="contactus.html">CONTACT US</a>
         </nav>
     </div>
 </div>
@@ -45,5 +47,19 @@
                 $('body').css('overflow-y', 'auto')
             }
         });
+        const currentPage = window.location.pathname.split('/')[2].split('.')[0]
+        if (window.innerWidth >= 768) {
+            $(`.desktop-menu #${currentPage}`).addClass('active')
+        } else {
+            $(`.mobile-menu #${currentPage}`).addClass('active')
+        }
+
+        $(window).scroll(() => {
+            if ($(window).scrollTop() >= 5) {
+                $('.menu-wrapper').addClass('sticky-menu')
+            } else {
+                $('.menu-wrapper').removeClass('sticky-menu')
+            }
+        })
     })
 </script>

@@ -16,6 +16,10 @@
     <!--bootstrap imports-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--AOS library imported-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!--Main style css style imported-->
     <link rel="stylesheet" href="./style/hamburger.css" />
     <link rel="stylesheet" href="./style/main.css" />
@@ -35,6 +39,33 @@
         .main-heading::before {
             content: 'CAREER';
         }
+
+        button {
+            background-color: #ff1313;
+        }
+
+        button::after {
+            background-color: #ffffff30;
+            top: -84px;
+            transform: skew(1deg, 8deg);
+        }
+
+        button::after:hover {
+            top: 18px;
+        }
+
+        .title {
+            font-family: "Orbitron", sans-serif !important;
+            font-weight: 800;
+        }
+
+        button a {
+            color: white;
+        }
+
+        button a:hover {
+            color: white;
+        }
     </style>
 </head>
 
@@ -49,13 +80,16 @@
         </div>
         <div class="container my-5">
             <div class="row m-auto d-none d-xl-flex">
-                <div class="d-none d-md-block col-md-6 col-lg-5 image-wrapper py-5 px-lg-5 px-md-2">
+                <div data-aos="fade-right"
+                    class="d-none d-md-block col-md-6 col-lg-5 image-wrapper py-5 px-lg-5 px-md-2">
 
                     <img src="./assests/about.jpg">
                 </div>
                 <div class="col-lg-7 d-flex flex-column justify-content-center">
-                    <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? Join Us!</h1>
-                    <p>
+                    <h1 data-aos="fade-left" class="mb-4">Are you Dedcated, Hardworking and Fun? <a href="#join"
+                            class="title">Join Us!</a>
+                    </h1>
+                    <p data-aos="fade-up">
                         Projecta is one of the
                         fast-growing organizations. we continually seek out motivated and
                         professional leaders to join our team! We offer engaging opportunities for every phase of one's
@@ -72,9 +106,10 @@
                 </div>
             </div>
             <div class="w-100 m-auto d-xl-none">
-                <img class="w-50 d-none d-md-block m-4 float-start" src="./assests/about.jpg">
-                <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? <a href="#join" class="title">Join Us!</a></h1>
-                <p>
+                <img data-aos="fade-right" class="w-50 d-none d-md-block m-4 float-start" src="./assests/about.jpg">
+                <h1 data-aos="fade-left" class="mb-4">Are you Dedcated, Hardworking and Fun? <a href="#join"
+                        class="title">Join Us!</a></h1>
+                <p data-aos="fade-up">
                     Projecta is one of the
                     fast-growing organizations. we continually seek out motivated and
                     professional leaders to join our team! We offer engaging opportunities for every phase of one's
@@ -91,36 +126,40 @@
             </div>
         </div>
         <div class="container ">
-            <h3 class="text-center">What does the recruitment process looks like?</h3>
+            <h3 data-aos="fade-right" class="text-center">What does the recruitment process looks like?</h3>
             <div class="row m-auto py-4">
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <img class="my-3 w-25" src="./assests/icons/telephone-call.png">
-                    <h5>1. Phone Interview</h5>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+                    <img data-aos="fade-down" class="my-3 w-25" src="./assests/icons/telephone-call.png">
+                    <h5 data-aos="fade-up">1. Phone Interview</h5>
+                    <p data-aos="fade-up" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
                         tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <img class="my-3 w-25" src="./assests/icons/friends.png">
-                    <h5>2. First Interview</h5>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+                    <img data-aos="fade-down" class="my-3 w-25" src="./assests/icons/friends.png">
+                    <h5 data-aos="fade-up">2. First Interview</h5>
+                    <p data-aos="fade-up" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
                         tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <img class="my-3 w-25" src="./assests/icons/setting.png">
-                    <h5>3. Technical Test</h5>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+                    <img data-aos="fade-down" class="my-3 w-25" src="./assests/icons/setting.png">
+                    <h5 data-aos="fade-up">3. Technical Test</h5>
+                    <p data-aos="fade-up" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
                         tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
-                    <img class="my-3 w-25" src="./assests/icons/file.png">
-                    <h5>4. Offer</h5>
-                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                <div class="col-12 col-md-6 col-lg-3 d-flex flex-column align-items-center justify-content-center">
+                    <img data-aos="fade-down" class="my-3 w-25" src="./assests/icons/file.png">
+                    <h5 data-aos="fade-up">4. Offer</h5>
+                    <p data-aos="fade-up" class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod
                         tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
@@ -129,10 +168,11 @@
         </div>
         <div class="carrer-bottom mt-5 px-2 py-5 d-flex justify-content-center align-items-center">
             <div id="join" class="connect mx-auto my4 text-center">
-                <h5>If you think that you have what it takes to add value while you build your career<br /> and
+                <h5 data-aos="fade-down">If you think that you have what it takes to add value while you build your
+                    career<br /> and
                     contribute to
                     great successes, share with us your resume at</h5>
-                <button><a href="mailto:careers@projecta.com.sa">careers@projecta.com.sa</a></button>
+                <button data-aos="zoom-in"><a href="mailto:careers@projecta.com.sa">careers@projecta.com.sa</a></button>
             </div>
         </div>
     </div>
@@ -149,6 +189,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
         crossorigin="anonymous"></script>
+
+    <!--AOS script-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!--importing custom scripts-->
     <script src="./js/main.js"></script>

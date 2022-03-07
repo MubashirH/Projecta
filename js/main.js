@@ -4,5 +4,6 @@ function headerFooterLoad() {
 }
 
 $(document).ready(function () {
+  AOS.init();
   headerFooterLoad();
 });
