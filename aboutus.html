@@ -34,11 +34,14 @@
             width: 150px;
             background-image: url('./assests/icons/play.png');
             background-size: 25px;
-            background-position: 120px 5px;
+            background-position: 115px 5px;
             background-repeat: no-repeat;
         }
-    </style>
 
+        .main-heading::before {
+            content: 'ABOUT US'
+        }
+    </style>
 </head>
 
 <body>
@@ -46,7 +49,7 @@
     <div id="header"></div>
 
     <div class="body-wrapper container">
-        <h1 class="my-5">ABOUT US</h1>
+        <h1 class="my-5 main-heading">ABOUT US</h1>
 
         <div class="row m-auto ">
             <div class="col-12 col-md-6">
@@ -70,7 +73,7 @@
                     <li class="mb-2">Electrical Works</li>
                     <li class="mb-2">Landscape works</li>
                 </ul>
-                <button>Contact Us</button>
+                <button><a href="contactus.html">Contact Us</a></button>
             </div>
             <div class="about-images col-12 col-md-6 order-first order-md-1">
                 <div class="img left"></div>
@@ -140,6 +143,12 @@
                     <p>Accountability, Respects, Integrity, Excellence, Commitment</p>
                 </div>
             </div>
+        </div>
+        <div class="row m-auto py-4">
+            <h4 class="title">Certifications</h4>
+        </div>
+        <div class="row m-auto py-4">
+            <h4>Team Managment</h4>
         </div>
     </div>
 

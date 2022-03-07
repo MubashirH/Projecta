@@ -24,8 +24,18 @@
         .icon {
             height: 50px;
         }
-    </style>
 
+        .main-heading::before {
+            content: 'CONTACT US';
+            left: 55%;
+            transform: translate(-50%, -50%);
+        }
+
+        .main-heading::after {
+            left: 34%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -34,7 +44,7 @@
 
     <div class="body-wrapper container py-5">
 
-        <h1 class="text-center py-5">CONTACT US</h1>
+        <h1 class="text-center my-5 main-heading">CONTACT US</h1>
         <p class="text-center py-4 w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco

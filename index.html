@@ -29,15 +29,18 @@
         }
 
         .stretch-image {
-            background-image: url('./assests/extra.jpg');
+            background-image: url('./assests/banner.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             height: inherit;
             flex: 1 1 auto;
         }
-    </style>
 
+        .main-heading::before {
+            content: 'PROJECTA'
+        }
+    </style>
 </head>
 
 <body>
@@ -52,7 +55,7 @@
             <div class="row">
                 <div class="col-12 col-md-5 d-flex flex-column">
                     <div class="intro pb-3">
-                        <h3>ProjectA</h3>
+                        <h1 class="main-heading">PROJECTA</h1>
                         <p>Projecta Healthcare Solutions is one of the world leaders in the field of unpacked
                             transportation, rigging, installation and application of large medical devices.
                         </p>

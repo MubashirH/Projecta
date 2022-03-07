@@ -18,7 +18,7 @@ h6 {
 button {
   user-select: auto;
   background: none;
-  border: 1px solid #ff1313;
+  border: 2px solid #ff1313;
   padding: 5px 15px;
   border-radius: 2px;
   overflow: hidden;
@@ -35,14 +35,40 @@ button::after {
   top: -67px;
   transform: skew(1deg, 19deg);
   z-index: 0;
-  transition: all 300ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 button:hover::after {
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
   top: 17px;
 }
 button a {
   color: #ff1313;
+}
+
+.main-heading {
+  position: relative;
+  z-index: 2;
+}
+.main-heading::after {
+  position: absolute;
+  content: "";
+  left: -3%;
+  top: 50%;
+  height: 120%;
+  width: 5px;
+  transform: translateY(-50%);
+  background-color: #ff1313;
+}
+.main-heading::before {
+  position: absolute;
+  z-index: 1;
+  left: -10px;
+  font-size: 60px;
+  color: #ff1313;
+  opacity: 0.2;
+  font-weight: 700;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 a {
@@ -97,7 +123,7 @@ a:hover {
 
 .banner {
   height: 70vh;
-  background-image: url("../assests/banner.jpg");
+  background-image: url("../assests/main-banner-1.jpg");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
