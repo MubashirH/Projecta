@@ -21,6 +21,10 @@
     <link rel="stylesheet" href="./style/main.css" />
 
     <style>
+        .title {
+            color: #ff1313;
+        }
+
         .menu-wrapper {
             position: absolute;
             top: 0;
@@ -29,7 +33,7 @@
         }
 
         .main-heading::before {
-            content: 'CAREERS';
+            content: 'CAREER';
         }
     </style>
 </head>
@@ -41,7 +45,7 @@
     <div class="body-wrapper">
         <div class="w-100 career-banner">
             <div class="gray"></div>
-            <h1 class="text-center px-5 my-5 main-heading">CAREERS</h1>
+            <h1 class="text-center px-5 my-5 main-heading">CAREER</h1>
         </div>
         <div class="container my-5">
             <div class="row m-auto d-none d-xl-flex">
@@ -69,7 +73,7 @@
             </div>
             <div class="w-100 m-auto d-xl-none">
                 <img class="w-50 d-none d-md-block m-4 float-start" src="./assests/about.jpg">
-                <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? Join Us!</h1>
+                <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? <a href="#join" class="title">Join Us!</a></h1>
                 <p>
                     Projecta is one of the
                     fast-growing organizations. we continually seek out motivated and
@@ -89,7 +93,7 @@
         <div class="container ">
             <h3 class="text-center">What does the recruitment process looks like?</h3>
             <div class="row m-auto py-4">
-                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
                     <img class="my-3 w-25" src="./assests/icons/telephone-call.png">
                     <h5>1. Phone Interview</h5>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -97,7 +101,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
                     <img class="my-3 w-25" src="./assests/icons/friends.png">
                     <h5>2. First Interview</h5>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -105,7 +109,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
                     <img class="my-3 w-25" src="./assests/icons/setting.png">
                     <h5>3. Technical Test</h5>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -113,7 +117,7 @@
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. </p>
                 </div>
-                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                <div class="col-12 col-md-3 d-flex flex-column align-items-center justify-content-center">
                     <img class="my-3 w-25" src="./assests/icons/file.png">
                     <h5>4. Offer</h5>
                     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -124,7 +128,7 @@
             </div>
         </div>
         <div class="carrer-bottom mt-5 px-2 py-5 d-flex justify-content-center align-items-center">
-            <div class="connect mx-auto my4 text-center">
+            <div id="join" class="connect mx-auto my4 text-center">
                 <h5>If you think that you have what it takes to add value while you build your career<br /> and
                     contribute to
                     great successes, share with us your resume at</h5>

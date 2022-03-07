@@ -66,7 +66,11 @@ button {
     position: absolute;
     z-index: 1;
     left: 37px;
+    width: max-content;
     font-size: 60px;
+    @media (max-width: 40em) {
+      font-size: 45px;
+    }
     color: #ff1313;
     opacity: 0.2;
     font-weight: 700;
@@ -273,7 +277,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
-    height: 70%;
+    height: 500px;
     width: 60%;
     position: absolute;
   }
@@ -314,8 +318,8 @@ a {
 }
 
 .career-banner {
-  background-image: url("../assests/careerbanner.jpg");
-  background-position: center;
+  background-image: url("../assests/career-ba.jpeg");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
   height: 50vh;

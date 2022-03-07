@@ -27,13 +27,24 @@
 
         .main-heading::before {
             content: 'CONTACT US';
-            left: 55%;
-            transform: translate(-50%, -50%);
         }
 
-        .main-heading::after {
-            left: 34%;
-            transform: translate(-50%, -50%);
+        .head {
+            position: relative;
+            min-height: 170px;
+        }
+
+        .head h1 {
+            position: absolute;
+            width: max-content;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        @media(max-width:30em) {
+            .main-heading::before {
+                font-size: 35px;
+            }
         }
     </style>
 </head>
@@ -42,9 +53,11 @@
 
     <div id="header"></div>
 
+    <div class="w-100 head">
+        <h1 class="text-center px-5 my-5 main-heading">CONTACT US</h1>
+    </div>
     <div class="body-wrapper container">
 
-        <h1 class="text-center my-5 main-heading">CONTACT US</h1>
         <p class="text-center py-4 w-75 m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
             tempor incididunt ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
