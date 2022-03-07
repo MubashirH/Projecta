@@ -17,11 +17,46 @@ h6 {
   font-weight: 600;
 }
 
+button {
+  user-select: auto;
+  background: none;
+  border: 1px solid #ff1313;
+  padding: 5px 15px;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: #ff131330;
+    height: 150%;
+    width: 120%;
+    left: -6px;
+    top: -67px;
+    transform: skew(1deg, 19deg);
+    z-index: 0;
+    transition: all 300ms ease-in-out;
+  }
+  &:hover {
+    &::after {
+      transition: all 200ms ease-in-out;
+      top: 17px;
+    }
+  }
+  a {
+    color: #ff1313;
+  }
+}
+
 a {
   text-decoration: none;
   color: $font-color;
   &:focus {
     color: $font-color;
+  }
+  &:hover {
+    color: #ff1313;
   }
 }
 
@@ -67,9 +102,9 @@ a {
 }
 
 .banner {
-  height: 50vh;
-  background-image: url("../assests/banner.jpeg");
-  background-position: center;
+  height: 70vh;
+  background-image: url("../assests/banner.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
