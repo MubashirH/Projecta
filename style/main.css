@@ -52,7 +52,7 @@ button a {
 .main-heading::after {
   position: absolute;
   content: "";
-  left: -3%;
+  left: 10px;
   top: 50%;
   height: 120%;
   width: 5px;
@@ -62,7 +62,7 @@ button a {
 .main-heading::before {
   position: absolute;
   z-index: 1;
-  left: -10px;
+  left: 37px;
   font-size: 60px;
   color: #ff1313;
   opacity: 0.2;
