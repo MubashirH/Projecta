@@ -10,7 +10,8 @@
     <!--Font styles imported-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!--bootstrap imports-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -19,6 +20,15 @@
     <link rel="stylesheet" href="./style/hamburger.css" />
     <link rel="stylesheet" href="./style/main.css" />
 
+    <style>
+        .menu-wrapper {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -26,8 +36,98 @@
     <div id="header"></div>
 
     <div class="body-wrapper">
-        <h1>CAREERS</h1>
+        <div class="w-100 career-banner">
+            <div class="gray"></div>
+            <h1 class="text-center">CAREERS</h1>
+        </div>
+        <div class="container my-5">
+            <div class="row m-auto d-none d-xl-flex">
+                <div class="d-none d-md-block col-md-6 col-lg-5 image-wrapper py-5 px-lg-5 px-md-2">
 
+                    <img src="./assests/about.jpg">
+                </div>
+                <div class="col-lg-7 d-flex flex-column justify-content-center">
+                    <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? Join Us!</h1>
+                    <p>
+                        Projecta is one of the
+                        fast-growing organizations. we continually seek out motivated and
+                        professional leaders to join our team! We offer engaging opportunities for every phase of one's
+                        career - just starting, recent graduate, transitioning to a new job, or multiple years of
+                        industry experience.<br /> <br />Our firm commitment to training provides all of our associates
+                        with
+                        ample
+                        opportunity for
+                        self-improvement and professional growth. We offer inclusive opportunities to all employees and
+                        applicants without regard to race, color, religion, sex, national origin, age, disability, or
+                        genetics. In addition to federal law requirements, Projecta complies with applicable state and
+                        local laws governing nondiscrimination in employment in every location where the company has
+                        facilities.</p>
+                </div>
+            </div>
+            <div class="w-100 m-auto d-xl-none">
+                <img class="w-50 d-none d-md-block m-4 float-start" src="./assests/about.jpg">
+                <h1 class="mb-4">Are you Dedcated, Hardworking and Fun? Join Us!</h1>
+                <p>
+                    Projecta is one of the
+                    fast-growing organizations. we continually seek out motivated and
+                    professional leaders to join our team! We offer engaging opportunities for every phase of one's
+                    career - just starting, recent graduate, transitioning to a new job, or multiple years of
+                    industry experience.<br />Our firm commitment to training provides all of our associates
+                    with
+                    ample
+                    opportunity for
+                    self-improvement and professional growth. We offer inclusive opportunities to all employees and
+                    applicants without regard to race, color, religion, sex, national origin, age, disability, or
+                    genetics. In addition to federal law requirements, Projecta complies with applicable state and
+                    local laws governing nondiscrimination in employment in every location where the company has
+                    facilities.</p>
+            </div>
+        </div>
+        <div class="container ">
+            <h4 class="text-center">What does the recruitment process looks like?</h4>
+            <div class="row m-auto py-4">
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                    <img class="my-3 w-25" src="./assests/icons/telephone-call.png">
+                    <h5>1. Phone Interview</h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                    <img class="my-3 w-25" src="./assests/icons/friends.png">
+                    <h5>2. First Interview</h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                    <img class="my-3 w-25" src="./assests/icons/setting.png">
+                    <h5>3. Technical Test</h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+                <div class="col-6 col-md-3 d-flex flex-column align-items-center justify-content-center">
+                    <img class="my-3 w-25" src="./assests/icons/file.png">
+                    <h5>4. Offer</h5>
+                    <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. </p>
+                </div>
+            </div>
+        </div>
+        <div class="carrer-bottom mt-5 px-2 py-5 d-flex justify-content-center align-items-center">
+            <div class="connect mx-auto my4 text-center">
+                <h5>If you think that you have what it takes to add value while you build your career<br /> and
+                    contribute to
+                    great successes, share with us your resume at</h5>
+                <button><a href="mailto:careers@projecta.com.sa">careers@projecta.com.sa</a></button>
+            </div>
+        </div>
     </div>
 
     <footer id="footer"></footer>

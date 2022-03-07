@@ -10,7 +10,8 @@
     <!--Font styles imported-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <!--bootstrap imports-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -19,15 +20,127 @@
     <link rel="stylesheet" href="./style/hamburger.css" />
     <link rel="stylesheet" href="./style/main.css" />
 
+    <style>
+        .title {
+            color: #ff1313;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            padding: 5px 30px 5px 5px;
+            width: 150px;
+            background-image: url('./assests/icons/play.png');
+            background-size: 25px;
+            background-position: 120px 5px;
+            background-repeat: no-repeat;
+        }
+    </style>
+
 </head>
 
 <body>
 
     <div id="header"></div>
 
-    <div class="body-wrapper">
-        <h1>ABOUT US</h1>
+    <div class="body-wrapper container">
+        <h1 class="my-5">ABOUT US</h1>
 
+        <div class="row m-auto ">
+            <div class="col-12 col-md-6">
+                <h4 class="title float-left">PROJECTS TASKS COMPANY</h4>
+                <p>is one of the aspired providers of Health care, Construction work &
+                    electromechanical works. We are proud to have multinational companies & local giants as our clients
+                    and business partners. Our operation extends throughout the kingdom executing projects in various
+                    cities. We create sustainable solutions and aim to be a leader in quality, green construction, work
+                    safety and business ethics. By combining our expertise and innovative solutions, we develop offices,
+                    homes and public-private partnership projects.
+                    We are specialized in the Health, Hospitality, Residential, Commercial, Educational, and
+                    governmental projects. Outlined herein below please find some of the scope of work & services
+                    provided by us
+                </p>
+                <ul>
+                    <li class="mb-2">Turnkey solution on healthcare</li>
+                    <li class="mb-2">MEP Design</li>
+                    <li class="mb-2">Civil Works</li>
+                    <li class="mb-2">Architectural Works</li>
+                    <li class="mb-2">Mechanical Works</li>
+                    <li class="mb-2">Electrical Works</li>
+                    <li class="mb-2">Landscape works</li>
+                </ul>
+                <button>Contact Us</button>
+            </div>
+            <div class="about-images col-12 col-md-6 order-first order-md-1">
+                <div class="img left"></div>
+                <div class="img right"></div>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 m-auto my-5 py-2 px-4 partners">
+        <h4 class="text-center py-4">Backed by world-class Partners</h4>
+        <div class="container my-4 ">
+            <div class="row m-auto justify-content-center">
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">ALBATROSS</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">KKT CHILLER</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">VORTAN</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">SHOE INN</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">G SIEMENS</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">GE</h5>
+                </div>
+                <div class="col-4 col-md-3 text-center ">
+                    <h5 class="py-3 px-2 border my-2">PHILIPS</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info container">
+        <div class="row m-auto">
+            <div class="col-12 col-md-6">
+                <h4 class="my-3">History</h4>
+                <p>The Region's economic growth in the last several years has resulted in increased opportunities for
+                    the construction works and installation of high-end electrical systems and Home Automation. PROJECTA
+                    is positioned to capitalize on the growing need of businesses in this Area.
+                    Established in 2006, PROJECTA started in healthcare and it has steadily progressed into construction
+                    field.
+                    PROJECTA has grown into a multi-divisional organization that practice business across the Kingdom of
+                    Saudi Arabia. The adherence to highly quality standards of services and the strong financial
+                    position enabled PROJECTA to maintain its distinctive reputation among the leading companies in its
+                    field of businesses. PROJECTA employs executives, professional managers, and high calibre skilled
+                    multinational staff whose disciplines cover every aspect of the Constructions, Operations,
+                    Maintenance and Space Automation sectors.
+                </p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div>
+                    <h4 class="my-3">Vision</h4>
+                    <p>Our vision is to be part of Saudi Arabia Vision 2030 and choice for our customers. It represents
+                        the
+                        future we are committed to deliver and serves as a stake in the ground for establishing
+                        near-term
+                        goals. We strive each and every day to fulfil our vision and create the future in which Projecta
+                        is
+                        the choice for clients, employees, vendors and shareholders like.</p>
+                </div>
+                <div>
+                    <h4 class="my-3">Values</h4>
+                    <p>Accountability, Respects, Integrity, Excellence, Commitment</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer id="footer"></footer>

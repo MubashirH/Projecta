@@ -1,18 +1,21 @@
 <div class="menu-wrapper w-100 p-0 m-auto">
-    <div class="desktop-menu py-4 row w-100 d-md-flex d-none">
-        <div class="col-md-3 col-lg-3"></div>
-        <div class="col-md-9 col-lg-9">
-            <div class="w-100 d-flex justify-content-between">
-                <a onClick="closeMenu()" href="index.html">HOME</a>
-                <a onClick="closeMenu()" href="services.html">SERVICES</a>
-                <a onClick="closeMenu()" href="products.html">OUR PRODUCTS</a>
-                <a onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
-                <a onClick="closeMenu()" href="careers.html">CAREER</a>
-                <a onClick="closeMenu()" href="contactus.html">CONTACT US</a>
-            </div>
+    <div class="desktop-menu py-4 row m-auto w-100 d-md-flex d-none">
+        <div class="col-md-3 col-lg-3">
+            <div class="logo w-100"></div>
+        </div>
+        <div class="col-md-9 col-lg-9 d-flex justify-content-between align-items-center">
+            <a onClick="closeMenu()" href="index.html">HOME</a>
+            <a onClick="closeMenu()" href="services.html">SERVICES</a>
+            <a onClick="closeMenu()" href="products.html">OUR PRODUCTS</a>
+            <a onClick="closeMenu()" href="aboutus.html">ABOUT US</a>
+            <a onClick="closeMenu()" href="careers.html">CAREER</a>
+            <a onClick="closeMenu()" href="contactus.html">CONTACT US</a>
         </div>
     </div>
-    <div class="mobile-menu w-100 d-xs-block d-sm-block d-md-none d-lg-none">
+    <div class="mobile-menu row m-auto w-100 d-xs-block d-sm-block d-md-none d-lg-none">
+        <div class="col-md-3 col-lg-3">
+            <div class="logo"></div>
+        </div>
         <input type="checkbox" id="navcheck" role="button" title="menu">
         <label for="navcheck" aria-hidden="true" title="menu">
             <span class="burger">
@@ -31,3 +34,16 @@
         </nav>
     </div>
 </div>
+
+
+<script>
+    $(document).ready(function () {
+        $("#navcheck").change(function (res) {
+            if ($("#navcheck").is(":checked")) {
+                $('body').css('overflow-y', 'hidden')
+            } else {
+                $('body').css('overflow-y', 'auto')
+            }
+        });
+    })
+</script>
