@@ -1,4 +1,4 @@
-$font-color: #000;
+$font-color: white;
 
 * {
   font-family: "Comfortaa", cursive !important;
@@ -19,6 +19,10 @@ h6 {
   font-family: "Orbitron", sans-serif !important;
   color: $font-color;
   font-weight: 600;
+}
+
+body {
+  background-color: #121212;
 }
 
 .active {
@@ -72,7 +76,7 @@ button {
   }
   &::before {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     left: 37px;
     width: max-content;
     font-size: 60px;
@@ -153,7 +157,7 @@ a {
   }
 }
 .sticky-menu {
-  background: white;
+  background: #121212;
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
@@ -163,13 +167,13 @@ a {
 .banner {
   height: 70vh;
   background-image: url("../assests/main-banner-1.jpg");
-  background-position: bottom;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .service-card {
-  box-shadow: 2px 3px 8px 2px #0000000f;
+  box-shadow: 2px 3px 8px 2px #ffffff26;
   overflow: hidden;
   &:hover {
     .image {
@@ -359,7 +363,7 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 9;
-    background: #f4f4f463;
+    background: #2e2e2e85;
     height: 100%;
     width: 100%;
   }
@@ -369,7 +373,6 @@ a {
     top: 50%;
     transform: translate(-50%, -50%);
     z-index: 10;
-    color: #ff1313;
   }
 }
 .carrer-bottom {
