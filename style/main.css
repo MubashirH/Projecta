@@ -23,6 +23,10 @@ body {
   background-color: #121212;
 }
 
+body-wrapper {
+  overflow-x: hidden;
+}
+
 .active {
   color: #ff1313;
 }
@@ -116,6 +120,11 @@ a:hover {
   background-repeat: no-repeat;
   position: relative;
   z-index: 1;
+}
+@media (max-width: 50em) {
+  .menu-wrapper .logo {
+    height: 60px;
+  }
 }
 .menu-wrapper .logo a {
   position: absolute;

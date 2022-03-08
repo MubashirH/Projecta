@@ -25,6 +25,10 @@ body {
   background-color: #121212;
 }
 
+body-wrapper {
+  overflow-x: hidden;
+}
+
 .active {
   color: #ff1313;
 }
@@ -113,6 +117,9 @@ a {
   .logo {
     min-height: 40px;
     max-height: 70px;
+    @media (max-width: 50em) {
+      height: 60px;
+    }
     background-image: url("../assests/logo.png");
     background-position: left;
     background-size: contain;
