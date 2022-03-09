@@ -1,7 +1,7 @@
 $font-color: white;
 
 * {
-  font-family: "Merriweather Sans", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   color: $font-color;
   font-weight: 600;
 }
@@ -16,7 +16,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
   color: $font-color;
   font-weight: 600;
 }
@@ -141,8 +141,6 @@ a {
   a {
     overflow: hidden;
     position: relative;
-    font-weight: 700;
-    font-family: "Orbitron", sans-serif !important;
     &::after {
       position: absolute;
       content: "";
@@ -174,9 +172,10 @@ a {
 .banner {
   height: 70vh;
   background-image: url("../assests/main-banner-1.png");
-  background-position: top;
+  background-position: left top;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: grayscale(1);
 }
 
 .service-card {
