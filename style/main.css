@@ -104,6 +104,10 @@ a:hover {
   color: #ff1313;
 }
 
+#footer a {
+  color: #ff1313;
+}
+
 .image-wrapper {
   object-fit: contain;
 }
@@ -169,11 +173,27 @@ a:hover {
 }
 
 .banner {
-  height: 70vh;
-  background-image: url("../assests/main-banner-1.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
+}
+.banner .swiper-slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.banner .swiper-slide img {
+  object-fit: cover;
+}
+.banner .swiper-slide .gray {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  background-color: #27272787;
+}
+@media (max-width: 70em) {
+  .banner {
+    height: 50vh;
+  }
 }
 
 .service-card {

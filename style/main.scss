@@ -106,6 +106,12 @@ a {
   }
 }
 
+#footer {
+  a {
+    color: #ff1313;
+  }
+}
+
 .image-wrapper {
   object-fit: contain;
   img {
@@ -170,11 +176,25 @@ a {
 }
 
 .banner {
-  height: 70vh;
-  background-image: url("../assests/main-banner-1.png");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100vh;
+  .swiper-slide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    img {
+      object-fit: cover;
+    }
+    .gray {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      background-color: #27272787;
+    }
+  }
+  @media (max-width: 70em) {
+    height: 50vh;
+  }
 }
 
 .service-card {
