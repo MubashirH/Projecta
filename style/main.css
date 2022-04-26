@@ -27,6 +27,10 @@ body-wrapper {
   overflow-x: hidden;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .active {
   color: #ff1313;
 }
@@ -314,7 +318,6 @@ a:hover {
   align-items: stretch;
 }
 .about-images .img {
-  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 25px;
@@ -323,13 +326,16 @@ a:hover {
   position: absolute;
 }
 .about-images .right {
-  background-image: url("../assests/about 1.jpg");
+  background-image: url("../assests/company2.jpg");
+  background-position: right;
   z-index: 2;
   right: -5px;
+  transform: scaleX(-1);
   top: -5px;
 }
 .about-images .left {
-  background-image: url("../assests/about 2.jpg");
+  background-image: url("../assests/company.jpg");
+  background-position: center;
   z-index: 3;
   left: -5px;
   bottom: -5px;
