@@ -260,7 +260,7 @@ a {
 
 .assembly {
   .image {
-    background-image: url("../assests/services/assembly.png");
+    background-image: url("../assests/services/assembly.jpg");
   }
   .icon {
     background-color: white;
@@ -296,12 +296,12 @@ a {
 
 .fair {
   .image {
-    background-image: url("../assests/services/exhibition.jpg");
+    background-image: url("../assests/products/kkt-chiller.png");
   }
   .icon {
     background-color: white;
     .img {
-      background-image: url("../assests/icons/exhibition\(1\).png");
+      background-image: url("../assests/icons/air-cooler.png");
     }
   }
 }
@@ -327,6 +327,18 @@ a {
     .img {
       background-image: url("../assests/icons/value.png");
     }
+  }
+}
+
+.head_link {
+  position: relative;
+  a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
   }
 }
 
