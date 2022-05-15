@@ -1,7 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif !important;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 html {
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .menu-wrapper .logo {
-  min-height: 40px;
+  min-height: 45px;
   max-height: 70px;
   background-image: url("../assests/logo.png");
   background-position: left;
@@ -334,7 +334,7 @@ a:hover {
   background-repeat: no-repeat;
   border-radius: 25px;
   height: 500px;
-  width: 60%;
+  width: 90%;
   position: absolute;
 }
 .about-images .right {
@@ -344,23 +344,6 @@ a:hover {
   right: -5px;
   transform: scaleX(-1);
   top: -5px;
-}
-.about-images .left {
-  background-image: url("../assests/company.jpg");
-  background-position: center;
-  z-index: 3;
-  left: 0px;
-  bottom: -5px;
-}
-.about-images:hover .right {
-  top: 0%;
-  right: 0px;
-  transition: all 300ms ease-in-out;
-}
-.about-images:hover .left {
-  bottom: 0%;
-  left: 0px;
-  transition: all 300ms ease-in-out;
 }
 
 .partners {
