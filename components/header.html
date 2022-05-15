@@ -47,12 +47,6 @@
                 $('body').css('overflow-y', 'auto')
             }
         });
-        const currentPage = window.location.pathname.split('/')[2].split('.')[0]
-        if (window.innerWidth >= 768) {
-            $(`.desktop-menu #${currentPage}`).addClass('active')
-        } else {
-            $(`.mobile-menu #${currentPage}`).addClass('active')
-        }
 
         $(window).scroll(() => {
             if ($(window).scrollTop() >= 5) {
@@ -61,5 +55,13 @@
                 $('.menu-wrapper').removeClass('sticky-menu')
             }
         })
+        console.log(window.location, window.location.pathname, window.location.pathname.split('/'))
+        const currentPage = window.location.pathname.split('/')[2].split('.')[0]
+        if (window.innerWidth >= 768) {
+            $(`.desktop-menu #${currentPage}`).addClass('active')
+        } else {
+            $(`.mobile-menu #${currentPage}`).addClass('active')
+        }
+
     })
 </script>
