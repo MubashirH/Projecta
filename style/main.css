@@ -33,6 +33,7 @@ body-wrapper {
 
 .active {
   color: #ff1313;
+  font-weight: 600;
 }
 
 button {
@@ -342,7 +343,6 @@ a:hover {
   background-position: right;
   z-index: 2;
   right: -5px;
-  transform: scaleX(-1);
   top: -5px;
 }
 
