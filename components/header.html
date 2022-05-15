@@ -56,7 +56,8 @@
             }
         })
         console.log(window.location, window.location.pathname, window.location.pathname.split('/'))
-        const currentPage = window.location.pathname.split('/')[2].split('.')[0]
+        const currentPage = window.location.pathname.split('/')[1].split('.')[0]
+        console.log(currentPage)
         if (window.innerWidth >= 768) {
             $(`.desktop-menu #${currentPage}`).addClass('active')
         } else {
